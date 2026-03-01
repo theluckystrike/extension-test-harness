@@ -1,0 +1,37 @@
+{
+    "name": "extension-test-harness",
+    "version": "0.1.0",
+    "description": "Unit testing harness for Chrome extensions — mocked Chrome APIs, fake storage/tabs/runtime, and assertion helpers without a browser.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "test",
+        "harness",
+        "mock",
+        "unit-test",
+        "assertion",
+        "manifest-v3",
+        "browser-extension",
+        "testing"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/extension-test-harness.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
